@@ -49,7 +49,7 @@ def read_data(filename):
 	gold={}
 	system={}
 
-	with open(filename) as file:
+	with open(filename, encoding='utf-8') as file:
 		for idx, line in enumerate(file):
 			cols=line.rstrip().split("\t")
 			gold[idx]=cols[1]
